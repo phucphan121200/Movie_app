@@ -17,7 +17,7 @@ export default function ListCast() {
                 <Cast index={0}/>
                 <Cast index={0}/>
             </div>
-            <hr  width="75%" size="0.5px" color="red" style={{marginTop: "20px"}} />
+            <hr  width="80%" size="0.5px" color="red" style={{marginTop: "20px"}} />
             
             <div className="writter-director">
                 <div className="director">

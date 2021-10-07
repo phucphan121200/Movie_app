@@ -4,6 +4,8 @@ import FeaturedMovie from "../../components/featuredMovie/FeaturedMovie"
 import "./movieDetail.scss"
 import ListCast from "../../components/listCast/ListCast"
 import Related from "../../components/related/Related"
+import VoteList from "../../components/votelist/VoteList"
+import DetailMovie from "../../components/detailMovie/DetailMovie"
 
 const MovieDetail = () => {
     return (
@@ -11,9 +13,15 @@ const MovieDetail = () => {
             <Navbar/>
             <FeaturedMovie/>
             <div className="sort-cast-relate">
-            <ListCast/>
-            <Related/>
-            </div>
+                <span className="sort-cast-deatil">
+                    <ListCast/>
+                    <DetailMovie/>
+                </span>
+                <span className="sort-relate-votelist">
+                    <Related/>
+                    <VoteList/>
+                </span>
+            </div>           
         </div>
     )
 }
